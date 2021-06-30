@@ -1,18 +1,6 @@
-
-
-
-//  $.getJSON("JSON/producto.json", (response) => { console.log(response)});
-
-
-
-//  console.log(arrayDeCards)
-
-
- 
-
 let carrito = new Array();
 let carroConsole = [];
-let carritoJSON = []
+let carritoJSON = [];
 
 const cardIds = ["cama1", "cama2", "cama3", "cama4", "cushion1", "cushion2", "cushion3", "cushion4"];
 
@@ -42,9 +30,6 @@ function asignaEventos(identificador, arrayDeCards) {
     
     localStorage.setItem("CarritoArray", carritoJSON )
 
-    // contadorCart = contadorCart + 1;
-    // localStorage.setItem("contadorCart", contadorCart);
-    // $("#cart").html( localStorage.getItem("contadorCart"));
     $("#cart").html(carrito.length)
 
     carroConsole.push(identificador)
