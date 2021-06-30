@@ -1,15 +1,5 @@
 
 
-
-//  $.getJSON("JSON/producto.json", (response) => { console.log(response)});
-
-
-
-//  console.log(arrayDeCards)
-
-
- 
-
 let carrito = new Array();
 let carroConsole = [];
 let carritoJSON = []
@@ -42,9 +32,6 @@ function asignaEventos(identificador, arrayDeCards) {
     
     localStorage.setItem("CarritoArray", carritoJSON )
 
-    // contadorCart = contadorCart + 1;
-    // localStorage.setItem("contadorCart", contadorCart);
-    // $("#cart").html( localStorage.getItem("contadorCart"));
     $("#cart").html(carrito.length)
 
     carroConsole.push(identificador)
